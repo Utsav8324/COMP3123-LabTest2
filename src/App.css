@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Default Background */
+.app.default {
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+}
+
+/* Sunny Background */
+.app.sunny {
+  background: url("/public/sunny.jpg") no-repeat center center/cover;
+}
+
+/* Cloudy Background */
+.app.cloudy {
+  background: url("/public/cloudy.jpg") no-repeat center center/cover;
+}
+
+/* Rainy Background */
+.app.rainy {
+  background: url("/public/rainy.jpg") no-repeat center center/cover;
+}
+
+/* Snowy Background */
+.app.snowy {
+  background: url("/public/snowy.jpg") no-repeat center center/cover;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
